@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Batch List (Static)</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Batch List</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>Time Slot</th><th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Simulated Row 1 -->
+            <tr>
+                <td>101</td>
+                <td>Morning Batch</td>
+                <td>Morning</td>
+                <td>
+                    <form action="edit-batch.html" method="get" style="display:inline;">
+                        <input type="hidden" name="id" value="101">
+                        <input type="submit" value="Edit">
+                    </form>
+                    <form action="delete-batch.html" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="101">
+                        <input type="submit" value="Delete">
+                    </form>
+                </td>
+            </tr>
+            <!-- Simulated Row 2 -->
+            <tr>
+                <td>102</td>
+                <td>Evening Batch</td>
+                <td>Evening</td>
+                <td>
+                    <form action="edit-batch.html" method="get" style="display:inline;">
+                        <input type="hidden" name="id" value="102">
+                        <input type="submit" value="Edit">
+                    </form>
+                    <form action="delete-batch.html" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="102">
+                        <input type="submit" value="Delete">
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <a href="batch.html">Add New Batch</a>
+</body>
+</html>

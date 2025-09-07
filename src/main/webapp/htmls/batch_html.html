@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Batches</title>
+</head>
+<body>
+    <h1>Batch Management</h1>
+
+    <!-- Create Batch -->
+    <h2>Add Batch</h2>
+    <form action="batch" method="post">
+        Batch Name: <input type="text" name="name" required><br>
+        Time Slot: 
+        <select name="timeSlot">
+            <option value="Morning">Morning</option>
+            <option value="Evening">Evening</option>
+        </select><br>
+        <input type="submit" value="Add Batch">
+    </form>
+
+    <br>
+
+    <!-- Fetch Batches -->
+    <form action="batch-list.html" method="get">
+        <input type="submit" value="View All Batches">
+    </form>
+</body>
+</html>

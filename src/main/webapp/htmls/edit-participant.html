@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Participant</title>
+</head>
+<body>
+    <h1>Edit Participant</h1>
+
+    <form action="participant" method="post">
+        <input type="hidden" name="id" value="1"> <!-- simulate update -->
+        Name: <input type="text" name="name" value="Alice"><br>
+        Age: <input type="number" name="age" value="25"><br>
+        Email: <input type="email" name="email" value="alice@example.com"><br>
+        Batch ID: <input type="number" name="batchId" value="101"><br>
+        <input type="submit" value="Update Participant">
+    </form>
+</body>
+</html>

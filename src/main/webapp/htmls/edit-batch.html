@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Batch</title>
+</head>
+<body>
+    <h1>Edit Batch</h1>
+
+    <!-- Simulated form for editing a batch with ID 101 -->
+    <form action="batch" method="post">
+        <!-- Hidden ID to identify which batch to update -->
+        <input type="hidden" name="id" value="101">
+
+        Batch Name: 
+        <input type="text" name="name" value="Morning Batch" required><br><br>
+
+        Time Slot: 
+        <select name="timeSlot">
+            <option value="Morning" selected>Morning</option>
+            <option value="Evening">Evening</option>
+        </select><br><br>
+
+        <input type="submit" value="Update Batch">
+    </form>
+
+    <br>
+    <a href="batch-list.html">Back to Batch List</a>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Participant List (Static)</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Participant List</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>Age</th><th>Email</th><th>Batch ID</th><th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Simulated Row 1 -->
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>25</td>
+                <td>alice@example.com</td>
+                <td>101</td>
+                <td>
+                    <form action="edit-participant.html" method="get" style="display:inline;">
+                        <input type="hidden" name="id" value="1">
+                        <input type="submit" value="Edit">
+                    </form>
+                    <form action="delete-participant.html" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="1">
+                        <input type="submit" value="Delete">
+                    </form>
+                </td>
+            </tr>
+            <!-- Simulated Row 2 -->
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>30</td>
+                <td>bob@example.com</td>
+                <td>102</td>
+                <td>
+                    <form action="edit-participant.html" method="get" style="display:inline;">
+                        <input type="hidden" name="id" value="2">
+                        <input type="submit" value="Edit">
+                    </form>
+                    <form action="delete-participant.html" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="2">
+                        <input type="submit" value="Delete">
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <a href="participant.html">Add New Participant</a>
+</body>
+</html>

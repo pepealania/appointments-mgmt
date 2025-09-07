@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Participants</title>
+</head>
+<body>
+    <h1>Participant Management</h1>
+
+    <!-- Create Participant -->
+    <h2>Add Participant</h2>
+    <form action="participant" method="post">
+        Name: <input type="text" name="name" required><br>
+        Age: <input type="number" name="age" required><br>
+        Email: <input type="email" name="email" required><br>
+        Batch ID: <input type="number" name="batchId" required><br>
+        <input type="submit" value="Add Participant">
+    </form>
+
+    <br>
+
+    <!-- Fetch Participants -->
+    <form action="participant-list.html" method="get">
+        <input type="submit" value="View All Participants">
+    </form>
+</body>
+</html>
